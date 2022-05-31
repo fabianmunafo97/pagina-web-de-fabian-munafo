@@ -366,6 +366,20 @@ main .sobre_mi {
         justify-content: space-evenly;
     }
 
+    .parrafo_mi {
+        animation-name: mianimacion;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes mianimacion {
+        0% {background: red;}
+        25% {background: orange;}
+        50% {background: gold;}
+        75% {background: green;}
+        100% {background: blue;}
+    }
+
     .parrafo_mi p {
         width: 50%;
         color: green;
