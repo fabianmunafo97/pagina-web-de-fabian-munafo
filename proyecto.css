@@ -7,7 +7,7 @@
 
 
 body{
-    background: rgba(111, 0, 255, 0.178);
+    background-image: -webkit-linear-gradient(aqua, blue, black);
     padding: 20px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -18,10 +18,10 @@ body{
     width: 100%;
     margin-top: 20px;
     text-align: center;
-    background: rgb(0, 255, 170);
+    background: rgb(92, 0, 197);
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    border: solid 2px violet;
+    border: solid 2px rgb(255, 0, 149);
 }
 
 .content_logo{
@@ -34,31 +34,30 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 5px solid rgb(204, 2, 255);
-    background: blue;
+    border: 5px solid rgb(125, 0, 156);
+    background: rgba(0, 0, 0, 0.733);
     margin-top: 5px; 
 }
 
 .content_cabecera h1{
     font-weight: 100px;
-    color: royalblue;
     margin-top: 20px;
     font-size: 30px;
+    color: aqua;
 }
 
-
 .content_cabecera p{
-    color: royalblue;
+    color: aquamarine;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .content_cabecera a{
-    color: royalblue;
+    color: white;
 }
 
 main{
-    background: rgb(221, 252, 255);
+    background: rgb(255, 219, 14);
     border: solid 2px rgb(255, 0, 255);
     margin-top: 5px;
 }
@@ -81,7 +80,7 @@ main{
     border-radius: 50%;
 }
 
-.text_content1 h1{
+.text_content1 h2{
     margin-top: 40px;
     font-weight: 100px;
     text-align: center;
@@ -117,14 +116,15 @@ main{
     margin: auto;
     margin-top: 40px;
     margin-bottom: 5px;
-    color: rgb(255, 255, 255);
+    color: blue;
     cursor:pointer;
-    text-decoration: underline;
 }
 
 .button_leer:hover{
-    background: rgb(136, 136, 255);
+    background: darkviolet;
     transform: scale(1.2);
+    text-decoration: underline;
+    color: aqua;
 }
 
 /*content2*/
@@ -205,17 +205,10 @@ footer {
 }
 
 .pie_de_pagina {
-    background-color: rgb(8, 134, 92);
+    background-color: rgb(125, 0, 184);
     border-bottom-right-radius: 3%;
     border-bottom-left-radius: 3%;
-    border: solid 2px violet;
-}
-
-.lista_redes {
-    background: rgb(29, 49, 54);
-    border-radius: 4%;
-    width: 50px;
-    height: 200px;
+    border: solid 2px rgb(170, 0, 170);
 }
 
 .redes{
@@ -252,7 +245,7 @@ footer {
     justify-content: flex-start;
 }
 
-/*sobre mi*/
+/*seccion leer mas*/
 
 body{
     display: grid;
@@ -263,12 +256,12 @@ body{
 }
 
 .cabecera_mi {
-    background: rgb(0, 255, 170);
+    background: rgb(0, 0, 0);
     width: 100%;
     margin-top: 20px;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    border: solid 2px violet;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border: solid 2px rgb(204, 0, 255);
 }
 
 .contenido_logo {
@@ -282,8 +275,8 @@ body{
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    border: 5px solid rgb(204, 2, 255);
-    background: blue;
+    border: 5px solid darkmagenta;
+    background: rgba(0, 0, 0, 0.692);
     margin-top: 5px;
 }
 
@@ -310,6 +303,37 @@ main .sobre_mi {
     
     /*seccion proyecto*/
 
+    body{
+        animation-name: animacionheader;
+        animation-iteration-count: infinite;
+        animation-duration: 8s;
+    }
+
+    @keyframes animacionheader {
+        0% {background: rgb(92, 0, 197);}
+        50% {background: rgb(250, 99, 82);}
+        100% {background: rgb(92, 0, 197);}       
+    }
+
+    .content_cabecera {
+        background: none;
+        border: none;
+    }
+
+    .content_cabecera h1{
+        font-weight: 100px;
+        margin-top: 20px;
+        font-size: 20px;
+        animation-name: h1animacion;
+        animation-duration: 2s;
+    
+    }
+    
+    @keyframes h1animacion {
+        0% {font-size: 0px; color: darkmagenta;}
+        100% {font-size: 20px; color: aqua;}
+    }
+
     .content1{
         display: flex;
         flex-direction: row-reverse;
@@ -317,7 +341,7 @@ main .sobre_mi {
     
     .text_content1 hr{
         width: 800px;
-    height: 5px;
+        height: 5px;
     }
     
     .img_content1{
@@ -336,6 +360,15 @@ main .sobre_mi {
         float: left;
         margin-left: 50px;
     }
+
+    .button_leer:hover{
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.384);
+    }
+
+    .content2 h2{
+        font-size: 30px;
+        color:rgb(150, 0, 196);
+    }
     
     .content2 hr{
         width: 80%;
@@ -352,43 +385,95 @@ main .sobre_mi {
         justify-content: baseline;
     }
 
+    .icon_details:hover{
+        transform: scale(1.3);
+        box-shadow: 5px 5px rgba(0, 0, 0, 0.336);
+        transition: 1s;
+    }
+    
+    .text_content1 p{
+        color: violet;
+    }
+
     /* comienzo seccion sobre mi*/
 
-    .sobre_mi {
-        background-color: rgb(166, 166, 255);
+    .cabecera_mi{
+        background: none;
+        border: none;
+    }
+
+    .cabecera_mi h1{
+        color: aqua;
     }
 
     .parrafo_mi {
-        font-size:large;
-        padding: 30px;
+        background: none;
+    }
+
+
+    .parrafo_mi {
         display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: space-around;
     }
 
-    .parrafo_mi {
+    .imagenes_leng {
+        height: 200px;
+        display: flex;
+        align-items: center;
+    }
+
+    .img_c {
         animation-name: mianimacion;
         animation-duration: 4s;
         animation-iteration-count: infinite;
     }
 
-    @keyframes mianimacion {
-        0% {background: red;}
-        25% {background: orange;}
-        50% {background: gold;}
-        75% {background: green;}
-        100% {background: blue;}
+    @keyframes  mianimacion{
+        0% {box-shadow: 0px 0px;}
+        50% {box-shadow: 1px 1px 1px 1px;
+        margin-bottom: 5px;}
+        100%{box-shadow: 0px 0px;}
     }
+
+    .img_js {
+        animation-name: mianimacion2;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes  mianimacion2{
+        0% {box-shadow: 0px 0px;}
+        50% {box-shadow: 1px 1px 1px 1px;
+        margin-top: 5px;}
+        100%{box-shadow: 0px 0px;}
+    }
+
+    .img_python{
+        animation-name: mianimacion3;
+        animation-duration: 4s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes  mianimacion3{
+        0% {box-shadow: 0px 0px;}
+        50% {box-shadow: 1px 1px 1px 1px;
+        margin-top: 5px;}
+        100%{box-shadow: 0px 0px;}
+    }
+
 
     .parrafo_mi p {
         width: 50%;
-        color: green;
+        color: blue;
         font-size: 20px;
-        background-color: rgb(0, 225, 255);
+        background-color: rgb(251, 255, 0);
         padding: 10px;
         margin: 15px;
+        margin-left: 470px;
         border-radius: 10px;
         border: solid 2px darkblue;
+        
     }
 
     .imagenes_leng {
@@ -397,9 +482,22 @@ main .sobre_mi {
         justify-content:space-evenly;
         padding: 20px;
         margin: 10px;
-        background-color: aqua;
+        background-color: orange;
         border-radius: 20px;
         border: solid blue;
+    }
+
+    .parrafo_mi2{
+        color: blue;
+        font-size: 20px;
+        font-family:Arial, Helvetica, sans-serif;
+        width: 800px;
+        background-color: yellow;
+        padding: 20px;
+        margin: 20px;
+        margin-left: 540px;
+        border-radius: 20px;
+        border:dashed 4px blue;
     }
 
     /*fin seccion sobre mi*/
@@ -415,7 +513,6 @@ main .sobre_mi {
         flex-direction: row;
         justify-content: baseline;
         align-items: center;
-        background: rgb(0, 0, 0);
         height: 100px;
         width: 200px;
         border-radius: 5%;
