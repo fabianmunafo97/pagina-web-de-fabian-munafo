@@ -1,0 +1,48 @@
+/* maps */
+.color1 {
+  color: blue;
+}
+
+.color2 {
+  color: red;
+}
+
+.color3 {
+  color: green;
+}
+
+.muestra-color {
+  background: red;
+  padding: 10px;
+}
+
+/*extend*/
+.btn, .btn--azul {
+  display: inline;
+  width: 200px;
+  text-decoration: none;
+  padding: 10px 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+  font-family: sans-serif;
+}
+
+.btn--azul {
+  background-color: blue;
+  color: white;
+}
+
+/*mixins*/
+.boton--alert {
+  display: inline-block;
+  padding: 10px;
+  border: 3px solid red;
+  border-radius: 10px;
+  color: black;
+  background: aqua;
+}
+
+body {
+  background-image: url(https://i.pinimg.com/originals/43/f6/e9/43f6e96e380e962457ece50b229c8e0c.jpg);
+}
+/*# sourceMappingURL=estilos.css.map */
