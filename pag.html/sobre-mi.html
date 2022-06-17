@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="../iconos/favicon_io/favicon-16x16.png" >
     <link rel="manifest" href="../iconos/favicon_io/site.webmanifest">
     <link rel="stylesheet" href="../iconos">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 </head>
 <body>
     <header class="cabecera_mi">
@@ -21,11 +22,50 @@
            <a href="../index.html"><img class="logo_mi" src="../img/codificacion.png" alt="img_logo" width="200px" height="200px"></a>
         </div>
         <h1>FABIAN MUNAFO DESARROLLADOR WEB</h1>
+        <div class="box_menu">
+            <nav class="navbar navbar-expand-lg bg-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="../iconos/favicon_io/favicon-16x16.png" alt=""></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../pag.html/sobre-mi.html">Sobre mi</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pag.html/trabajos.html">trabajos</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="../pag.html/servicios.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Servicios
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="../pag.html/contacto.html">Contacto</a>
+                      </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">buscar</button>
+                    </form>
+                  </div>
+                </div>
+              </nav>
+        </div>
     </header>
     <main>
         <article class="sobre_mi">
             <section class="parrafo_mi">
                 <h2>Sobre mi</h2>
+                <hr>
                 <p class="mi_parrafo">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ut aliquid quis exercitationem cumque error obcaecati eligendi et voluptates beatae sed necessitatibus iusto quibusdam repudiandae ipsam odio deserunt iste magnam, maiores molestias consequatur, vitae nostrum? Quae aperiam perspiciatis inventore dolore nesciunt laudantium eos praesentium! Provident a unde quidem quas dolor.</p>
 
                 <div class="imagenes_leng">
@@ -70,6 +110,6 @@
 
     </footer>
 
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
