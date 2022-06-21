@@ -1,48 +1,92 @@
-/* maps */
-.color1 {
-  color: blue;
-}
+*
 
-.color2 {
-  color: red;
+header {
+  background: #3535e9;
+  padding: 20px;
 }
-
-.color3 {
-  color: green;
+header .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-
-.muestra-color {
-  background: red;
-  padding: 10px;
+header h1 {
+  color: #87ceeb;
+  text-align: center;
+  text-decoration: underline;
+  -webkit-text-decoration-color: #87ceeb;
+          text-decoration-color: #87ceeb;
 }
-
-/*extend*/
-.btn, .btn--azul {
-  display: inline;
-  width: 200px;
-  text-decoration: none;
-  padding: 10px 20px;
-  border: 1px solid black;
-  border-radius: 20px;
-  font-family: sans-serif;
-}
-
-.btn--azul {
-  background-color: blue;
+header hr {
   color: white;
 }
 
-/*mixins*/
-.boton--alert {
-  display: inline-block;
-  padding: 10px;
-  border: 3px solid red;
-  border-radius: 10px;
-  color: black;
-  background: aqua;
+.presupuesto {
+  color: #87ceeb;
 }
 
-body {
-  background-image: url(https://i.pinimg.com/originals/43/f6/e9/43f6e96e380e962457ece50b229c8e0c.jpg);
+p {
+  color: #87ceeb;
 }
-/*# sourceMappingURL=estilos.css.map */
+
+section {
+  background: #3535e9;
+  padding: 20px;
+  text-align: center;
+}
+section h2 {
+  color: #87ceeb;
+  -webkit-text-decoration: #87ceeb;
+          text-decoration: #87ceeb;
+}
+section h3 {
+  color: #87ceeb;
+  -webkit-text-decoration: #87ceeb;
+          text-decoration: #87ceeb;
+}
+section .mark_info {
+  color: #87ceeb;
+}
+section .p {
+  padding: 10px;
+}
+section hr {
+  color: white;
+}
+
+section .mark_dig {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+section .finanzas img {
+  border: 3px solid #87ceeb;
+  border-radius: 50%;
+}
+
+section a {
+  background: #87ceeb;
+  color: #5757ff;
+}
+
+.API img {
+  border: 3px solid #87ceeb;
+  border-radius: 10px;
+}
+
+footer {
+  background: #5757ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+}
+footer .lista_redes {
+  list-style: none;
+}
+
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}/*# sourceMappingURL=estilos.css.map */

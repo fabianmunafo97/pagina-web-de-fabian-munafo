@@ -1,0 +1,10 @@
+footer{
+    background: $terciario;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px;
+    .lista_redes{
+        list-style: none;
+    }
+}

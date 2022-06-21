@@ -1,6 +1,13 @@
+*
+
 @import "vars";
 @import "header";
+@import "body";
+@import "main";
+@import "footer";
 
-body{
-    background-image: url(https://i.pinimg.com/originals/43/f6/e9/43f6e96e380e962457ece50b229c8e0c.jpg);
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
