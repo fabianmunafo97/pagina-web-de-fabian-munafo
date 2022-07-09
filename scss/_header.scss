@@ -1,3 +1,11 @@
+@import"vars";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 header{
     background: $principal;
     padding: 20px;
@@ -13,6 +21,6 @@ header{
             text-decoration-color: $secundario;
         }
             hr{
-                color: white;
+                color: $secundario;
             }
 }

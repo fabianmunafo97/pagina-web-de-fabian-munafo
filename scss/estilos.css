@@ -1,4 +1,9 @@
-*
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 header {
   background: #3535e9;
@@ -17,7 +22,17 @@ header h1 {
           text-decoration-color: #87ceeb;
 }
 header hr {
-  color: white;
+  color: #87ceeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(to bottom, #3535e9, #3535e9, #5757ff);
 }
 
 .presupuesto {
@@ -26,6 +41,12 @@ header hr {
 
 p {
   color: #87ceeb;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 section {
@@ -53,15 +74,47 @@ section hr {
   color: white;
 }
 
+section .finanzas img {
+  border: 3px solid #87ceeb;
+  border-radius: 50%;
+}
+
+button.pedir_presupuesto {
+  border: 2px solid #87ceeb;
+  border-radius: 10px;
+  background: #5757ff;
+  color: #87ceeb;
+  height: 40px;
+  padding: 5px;
+}
+button.pedir_presupuesto:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+  background: #3535e9;
+  text-decoration: underline;
+}
+
+section.parrafo_mi {
+  background: linear-gradient(#3535e9, #87ceeb, #5757ff);
+}
+
+.mi_parrafo {
+  background: #5757ff;
+  border: 5px solid #87ceeb;
+  border-radius: 12px;
+  width: 700px;
+  height: auto;
+  margin: auto;
+  letter-spacing: 3px;
+  font-size: larger;
+  padding: 2px;
+  background-image: linear-gradient(to bottom, #3535e9, #5757ff);
+}
+
 section .mark_dig {
   display: flex;
   flex-direction: row;
   justify-content: center;
-}
-
-section .finanzas img {
-  border: 3px solid #87ceeb;
-  border-radius: 50%;
 }
 
 section a {
@@ -72,6 +125,105 @@ section a {
 .API img {
   border: 3px solid #87ceeb;
   border-radius: 10px;
+}
+
+.content_seo h3 {
+  text-decoration: underline;
+}
+.content_seo h3 .p_seo p {
+  font-size: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.content_soporte h3 {
+  text-decoration: underline;
+}
+.content_soporte h3 p {
+  font-size: 20px;
+  width: 50%;
+  margin: auto;
+}
+
+.content_dis p {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+}
+
+.lenguajes_diseños img {
+  border: 2px solid #87ceeb;
+  border-radius: 10px;
+  margin: 20px auto;
+}
+
+.btn_trabajos a button {
+  border: 2px solid #87ceeb;
+  border-radius: 10px;
+  background: #5757ff;
+  color: #87ceeb;
+  height: 40px;
+  padding: 5px;
+}
+.btn_trabajos a button:hover {
+  transform: scale(1.5);
+  transition: 0.5s;
+  background: #3535e9;
+  text-decoration: underline;
+}
+
+.mark_dig img {
+  border: 3px solid #87ceeb;
+  border-radius: 10px;
+}
+
+.text_clientes {
+  width: 60%;
+  margin: auto;
+  font-family: sans-serif;
+}
+
+.container_jobs {
+  border-radius: 10px;
+  width: 80%;
+  margin: auto;
+}
+.container_jobs .job_1 {
+  padding: 20px;
+  width: 100%;
+}
+.container_jobs .job_1 .img_local {
+  width: 30%;
+  height: auto;
+  border-radius: 10px;
+}
+.container_jobs .job_1 .img_local:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}
+
+@media (max-width: 500px) {
+  .mi_parrafo {
+    width: 280px;
+    border: 2px solid #87ceeb;
+    border-radius: 10px;
+  }
+
+  .container_jobs {
+    width: 100%;
+  }
+  .container_jobs .job_1 {
+    padding: 5px;
+  }
+  .container_jobs .job_1 .img_local {
+    width: 80%;
+    height: auto;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 footer {
@@ -85,8 +237,102 @@ footer .lista_redes {
   list-style: none;
 }
 
-.logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+div.contact_p {
+  width: 800px;
+  height: auto;
+  margin: auto;
+}
+
+.formulario {
+  width: 400px;
+  height: auto;
+  margin: auto;
+}
+.formulario .controls {
+  border: solid 2px #5757ff;
+  border-radius: 10px;
+  background: #87ceeb;
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+  padding: 5px;
+  color: #5757ff;
+}
+.formulario .controls label {
+  display: block;
+  float: center;
+}
+.formulario .controls input {
+  border: solid 2px #3535e9;
+  border-radius: 10px;
+  padding: 5px;
+  background: #5757ff;
+  color: #87ceeb;
+}
+.formulario .controls input:hover {
+  background: #3535e9;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+.formulario .controls textarea {
+  background: #5757ff;
+  border: solid 1px #3535e9;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 5px;
+  color: #87ceeb;
+}
+.formulario .controls textarea:hover {
+  background: #3535e9;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+::-moz-placeholder {
+  color: #87ceeb;
+}
+
+:-ms-input-placeholder {
+  color: #87ceeb;
+}
+
+::placeholder {
+  color: #87ceeb;
+}
+
+input.boton {
+  width: 100px;
+  border: 2px solid #87ceeb;
+  border-radius: 10px;
+  background-color: #5757ff;
+  color: #87ceeb;
+  padding: 10px;
+  margin: 10px;
+}
+input.boton:hover {
+  background: #3535e9;
+  transform: scale(1.05);
+  transition: 0.5s;
+}
+
+@media (max-width: 768px) {
+  div.formulario {
+    width: auto;
+    height: auto;
+  }
+
+  div.contact_p {
+    width: 300px;
+  }
+}
+@media (max-width: 320px) {
+  .contacto {
+    padding: 5px;
+  }
 }/*# sourceMappingURL=estilos.css.map */

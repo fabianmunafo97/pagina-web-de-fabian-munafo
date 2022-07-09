@@ -69,44 +69,47 @@
     </header>
 
     <main>
-        <section>
+        <section class="contacto">
 
             <h2>Información de contacto</h2>
 
+            <div class="contact_p">
+                <p>Complete el formulario con sus datos y dejenos su consulta. Un asesor se comunicará con usted a la brevedad para hacer el diseño de su página web. Especifíque todos los requisitos de su sitio web y si tiene paginas web de referencia detalle las mismas en su mensaje.</p>
+            </div>
 
-            <p>Complete el formulario con sus datos y dejenos su consulta. Un asesor se comunicará con usted a la brevedad para hacer el diseño de su página web. Especifíque todos los requisitos de su sitio web y si tiene paginas web de referencia detalle las mismas en su mensaje.</p>
+            <div class="formulario">
+                <form action="enviar.php" method="get" enctype="text/plain">
 
-            <form action="enviar.php" method="get" enctype="text/plain">
+                    <div class="controls">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" id="nombre" placeholder="Ingrese su nombre" required="required"> 
+                    </div>
 
-                <div class="first_name">
-                    <label for="nombre">Nombre *</label>
-                    <input type="text" id="nombre" placeholder="Ingrese su nombre" required="required"> 
-                </div>
+                    <div class="controls">
+                        <label for="apellido">Apellido *</label>
+                        <input type="text" id="apellido" placeholder="Ingrese su apellido" required="required">
+                    </div>
 
-                <div class="last_name">
-                    <label for="apellido">Apellido *</label>
-                    <input type="text" id="apellido" placeholder="Ingrese su apellido" required="required">
-                </div>
+                    <div class="controls">
+                        <label for="phone">Telefono *</label>
+                        <input type="text" id="phone" placeholder="Ingrese su telefono" required="required">
+                    </div>
 
-                <div class="telefono">
-                    <label for="phone">Telefono *</label>
-                    <input type="text" id="phone" placeholder="Ingrese su telefono" required="required">
-                </div>
+                    <div class="controls">
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" placeholder="Ingrese su correo" required="required">
+                    </div>
 
-                <div class="correo">
-                    <label for="email">Email *</label>
-                    <input type="email" name="email" placeholder="Ingrese su correo" required="required">
-                </div>
+                    <div class="controls">
+                        <label for="message">Mensaje</label>
+                        <textarea name="message" id="message" placeholder="Su mensaje" cols="30" rows="4"></textarea>
+                    </div>
 
-                <div class="su_mensaje">
-                    <label for="message">Mensaje</label>
-                    <textarea name="message" id="message" placeholder="Su mensaje" cols="50" rows="4"></textarea>
-                </div>
-
-                <div class="btn_enviar">
-                    <input type="submit" value="ENVIAR">
-                </div>
-            </form>
+                    <div class="btn_enviar">
+                        <input class="boton" type="submit" value="ENVIAR">    
+                    </div>
+                </form>
+            </div>
         </section>
     </main>
 
@@ -124,7 +127,7 @@
                     <a href="https://www.instagram.com/"><img src="../iconos/instagram.ico" alt="insta" width="20px" height="20px"></a>
                 </li>
                 <li class="whatsapp">
-                    <a href="https://web.whatsapp.com/"><img src="../iconos/instagram.ico" alt="what" width="20px" height="20px"></a>
+                    <a href="https://web.whatsapp.com/"><img src="../iconos/whatsapp.ico" alt="what" width="20px" height="20px"></a>
                 </li>
                 <li class="linkedin">
                     <a href="https://ar.linkedin.com/"><img src="../iconos/linkedin.ico" alt="link" width="20px" height="20px"></a>

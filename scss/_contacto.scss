@@ -1,0 +1,96 @@
+@import"vars";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.contact_p{
+    width: 800px;
+    height: auto;
+    margin: auto;
+}
+
+.formulario{
+    width: 400px;
+    height: auto;
+    margin: auto;
+    .controls{
+        border: solid 2px $terciario;
+        border-radius: 10px;
+        background: $secundario;
+        display: block;
+        width: 300px;
+        margin: 20px auto;
+        padding: 5px;
+        color: $terciario;
+        label{
+            display: block;
+            float: center;
+            
+        }
+        input{
+            border: solid 2px $principal;
+            border-radius: 10px;
+            padding: 5px;
+            background: $terciario;
+            color: $secundario;
+            &:hover{
+                background: $principal;
+                transform: scale(1.05);
+                transition: 0.5s;
+            }
+        }
+        textarea{
+            background: $terciario;
+            border: solid 1px $principal;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 5px;
+            color: $secundario;
+            &:hover{
+                background: $principal;
+                transform: scale(1.05);
+                transition: 0.5s;
+            }
+        }
+    }
+}
+
+
+::placeholder{
+    color: $secundario;
+}
+
+input.boton{
+    width: 100px;
+    border: 2px solid $secundario;
+    border-radius: 10px;
+    background-color: $terciario;
+    color: $secundario;
+    padding: 10px;
+    margin: 10px;
+    &:hover{
+        background: $principal;
+        transform: scale(1.05);
+        transition: 0.5s;
+    }
+}
+
+
+@media (max-width: 768px){
+    div.formulario{
+        width: auto;
+        height: auto;
+    }
+    div.contact_p{
+        width: 300px;
+    }
+    
+}
+@media (max-width: 320px){
+    .contacto{
+        padding: 5px;
+    }
+}

@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.formulario {
+  width: 500px;
+  height: auto;
+  margin: auto;
+}
+.formulario .controls {
+  border: solid 2px #5757ff;
+  border-radius: 10px;
+  background: #87ceeb;
+  display: block;
+  width: 300px;
+  margin: 20px auto;
+  padding: 5px;
+}
+.formulario .controls label {
+  display: block;
+  float: center;
+}
+.formulario .controls input {
+  border: solid 1px;
+  border-radius: 10px;
+  padding: 5px;
+}/*# sourceMappingURL=contacto.css.map */

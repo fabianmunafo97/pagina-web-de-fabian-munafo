@@ -1,0 +1,205 @@
+@import"vars";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+///*section principal*///
+
+section{
+    background: $principal;
+    padding: 20px;
+    text-align: center;
+        h2{
+            color: $secundario;
+            text-decoration: $secundario;
+        }
+            h3{
+                color: $secundario;
+                text-decoration: $secundario;
+            }
+                .mark_info{
+                    color: $secundario;
+                }
+                        .p{
+                        padding: 10px;
+                    }
+                            hr{
+                                color: white;
+                            }
+}
+
+section .finanzas img{
+    border: 3px solid $secundario;
+    border-radius: 50%;
+}
+
+button.pedir_presupuesto{
+    border: 2px solid $secundario;
+    border-radius: 10px;
+    background: $terciario;
+    color: $secundario;
+    height: 40px;
+    padding: 5px;
+    &:hover{
+        transform: scale(1.5);
+        transition: 0.5s;
+        background: $principal;
+        text-decoration: underline;
+    }
+
+}
+
+///*sobre mi*///
+
+section.parrafo_mi{
+    background: linear-gradient($principal, $secundario, $terciario);
+}
+
+.mi_parrafo{
+    background: $terciario;
+    border: 5px solid $secundario;
+    border-radius: 12px;
+    width: 700px;
+    height: auto;
+    margin: auto;
+    letter-spacing: 3px;
+    font-size:larger;
+    padding: 2px;
+    background-image: linear-gradient(to bottom, $principal, $terciario);
+}
+
+
+///*marketing digital*///
+
+section .mark_dig{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+section a{
+    background: $secundario;
+    color: $terciario;
+}
+
+///*servicios web*///
+
+.API img{
+    border: 3px solid $secundario;
+    border-radius: 10px;
+}
+
+.content_seo h3{
+    text-decoration: underline;
+    .p_seo p{
+        font-size: 20px;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+.content_soporte h3{
+    text-decoration: underline;
+    p{
+        font-size: 20px;
+        width: 50%;
+        margin: auto;
+    }
+}
+
+///*diseños web*///
+
+.content_dis p{
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+}
+
+.lenguajes_diseños img{
+    border: 2px solid $secundario;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.btn_trabajos a button{
+    border: 2px solid $secundario;
+    border-radius: 10px;
+    background: $terciario;
+    color: $secundario;
+    height: 40px;
+    padding: 5px;
+    &:hover{
+        transform: scale(1.5);
+        transition: 0.5s;
+        background: $principal;
+        text-decoration: underline;
+    }
+}
+
+///*marketing digital*///
+
+.mark_dig img{
+    border: 3px solid $secundario;
+    border-radius: 10px;
+}
+
+
+///*trabajos*///
+
+.text_clientes{
+    width: 60%;
+    margin: auto;
+    font-family: sans-serif;
+}
+
+.container_jobs{
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+        .job_1{
+            padding: 20px;
+            width: 100%;
+            .img_local{
+                width: 30%;
+                height: auto;
+                border-radius: 10px;
+                &:hover{
+                    transform: scale(1.03);
+                    transition: 0.5s;
+                }
+            }
+        }
+}
+
+
+@media(max-width: 500px) {
+
+    ///*sobre mi*///
+
+    .mi_parrafo{
+        width: 280px;
+        border: 2px solid $secundario;
+        border-radius: 10px;
+    }
+
+    ///*trabajos*///
+
+    .container_jobs{
+        width: 100%;
+        .job_1{
+            padding: 5px;
+            .img_local{
+                width: 80%;
+                height: auto;
+            }
+        }
+    }
+
+}
+
